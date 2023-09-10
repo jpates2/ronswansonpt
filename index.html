@@ -16,7 +16,8 @@
     <!-- Hero section -->
     <section id="hero">
       <div class="relative flex justify-center h-96 w-screen py-12 lg:h-128">
-        <div class="flex absolute space-x-12 right-12 max-w-xl justify-between items-center">
+        <!-- Main navbar -->
+        <div class="hidden absolute space-x-12 right-12 max-w-xl justify-between items-center lg:flex">
             <div class="group">
               <a href="#" class="text-lg text-pink">WHY</a>
               <div class="mx-2 group-hover:border-b group-hover:border-pink"></div>
@@ -29,9 +30,20 @@
               <a href="#" class="text-lg text-pink">HOW MUCH</a>
               <div class="mx-2 group-hover:border-b group-hover:border-pink"></div>
             </div>
+            <!-- Message button -->
             <button class="px-6 py-4 bg-pink text-md font-semibold rounded-full hover:text-white hover:scale-105 duration-300">MESSAGE</button>
         </div>
-        <div class="absolute top-80 max-w-xl p-4 font-sans text-center text-pink font-bold uppercase border-8 border-pink text-6xl lg:p-10 lg:top-56 lg:right-16">RON SWANSON PERSONAL TRAINING</div>
+        <!-- Hero title -->
+        <div class="absolute top-80 max-w-xl p-4 font-sans text-center text-pink font-bold uppercase border-[12px] border-pink text-6xl lg:p-10 lg:top-56 lg:right-16">RON SWANSON PERSONAL TRAINING</div>
+      </div>
+    </section>
+
+    <!-- Slogan banner -->
+    <section id="slogan" class="relative">
+      <div class="absolute flex flex-col items-center space-y-2 w-screen py-4 top-64 text-white text-3xl bg-pink lg:top-24 lg:px-40 lg:space-y-0 lg:flex-row lg:justify-between">
+        <div>GET FIT</div>
+        <div>GET STRONG</div>
+        <div>GET HEALTHY</div>
       </div>
     </section>
 
