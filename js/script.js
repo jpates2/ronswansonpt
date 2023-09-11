@@ -6,7 +6,6 @@ tabs.forEach((tab) => tab.addEventListener("click", onTabClick))
 
 function onTabClick(e) {
   // Deactivate all tabs
-  console.log(e.target);
   tabs.forEach((tab) => {
     tab.children[0].classList.remove("border-b-4", "border-pink")
   })
