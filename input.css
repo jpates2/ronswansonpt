@@ -3,8 +3,58 @@
 @tailwind utilities;
 
 #hero {
-  background-image: linear-gradient(to bottom, rgba(28, 28, 28, 0.1), rgba(28, 28, 28, 1)), url('../images/gym1.jpg');
+  background-image: linear-gradient(to bottom, rgba(28, 28, 28, 0.1), rgba(28, 28, 28, 1)), url('../images/gym4.jpg');
   /* background-image: url("../images/gym1.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+/* Hamburger Menu */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  top: 0;
+  left: 0;
+  background: #DB2763;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }

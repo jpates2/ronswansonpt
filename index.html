@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ron Swanson PT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bebas+Neue&family=Dosis:wght@400;500;600;700&family=Inconsolata:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Play:wght@400;700&family=Rajdhani:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="assets/fontawesome/solid.js"></script>
+    <script defer src="assets/fontawesome/fontawesome.js"></script>
     <script src="js/script.js" defer></script>
   </head>
   <body class="bg-dark">
 
     <!-- Hero section -->
     <section id="hero">
+
+      <!-- Hamburger button -->
+      <div class="relative lg:hidden">
+        <button id="menu-btn" type="button" class="z-40 block hamburger lg:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
       <div class="relative flex justify-center h-96 w-screen py-12 lg:h-128">
         <!-- Main navbar -->
         <div class="hidden absolute space-x-12 right-12 max-w-xl justify-between items-center lg:flex">
@@ -33,19 +46,91 @@
             <!-- Message button -->
             <button class="px-6 py-4 bg-pink text-md font-semibold rounded-full hover:text-white hover:scale-105 duration-300">MESSAGE</button>
         </div>
+
         <!-- Hero title -->
         <div class="absolute top-80 max-w-xl p-4 font-sans text-center text-pink font-bold uppercase border-[12px] border-pink text-6xl lg:p-10 lg:top-56 lg:right-16">RON SWANSON PERSONAL TRAINING</div>
       </div>
     </section>
 
+    <!-- Post hero break -->
+
+    <div class="h-72 md:h-64 lg:h-24"></div>
+
     <!-- Slogan banner -->
     <section id="slogan" class="relative">
-      <div class="absolute flex flex-col items-center space-y-2 w-screen py-4 top-64 text-white text-3xl bg-pink lg:top-24 lg:px-40 lg:space-y-0 lg:flex-row lg:justify-between">
+      <div class="flex flex-col items-center space-y-2 w-screen py-4 text-white text-3xl bg-pink lg:px-40 lg:space-y-0 lg:flex-row lg:justify-between">
         <div>GET FIT</div>
         <div>GET STRONG</div>
         <div>GET HEALTHY</div>
       </div>
     </section>
 
+    <!-- Why heading -->
+    <section id="why">
+      <div class="flex flex-col items-center mt-12">
+        <!-- Why header -->
+        <h2 class="text-pink text-4xl font-semibold py-8">WHY CHOOSE US</h2>
+        <!-- Why intro -->
+        <p class="max-w-xl px-4 text-center text-white text-lg">At Ron Swanson Personal Training we offer personalised fitness plans tailored to your goals. Join our positive fitness community for motivation, accountability and a shared commitment to achieving your health and wellness goals.</p>
+      </div>
+    </section>
+
+    <!-- Why tabs section -->
+    <section id="why">
+      <!-- Tabs / panels container -->
+      <div class="mx-auto mt-12 mb-12 py-8 px-12 max-w-3xl border-2 border-pink">
+        <!-- Tabs container -->
+        <div class="flex justify-center max-w-xl mx-auto border-b">
+          <!-- Tab 1 -->
+          <div class="flex justify-center w-1/3 text-center cursor-pointer text-pink hover:text-white tab" data-target="panel-1">
+            <div class="py-3 border-b-4 border-pink" data-target="panel-1">WORKOUTS</div>
+          </div>
+          <!-- Tab 2 -->
+          <div class="flex justify-center w-1/3 text-center cursor-pointer text-pink hover:text-white tab" data-target="panel-2">
+            <div class="py-3" data-target="panel-2">NUTRITION</div>
+          </div>
+          <!-- Tab 3 -->
+          <div class="flex justify-center w-1/3 text-center cursor-pointer text-pink hover:text-white tab" data-target="panel-3">
+            <div class="py-3" data-target="panel-3">MINDSET</div>
+          </div>
+        </div>
+
+        <!-- Tab panels -->
+        <div id="panels" class="mx-auto">
+          <!-- Panel 1 -->
+          <div class="flex justify-center py-8 panel panel-1">
+            <!-- Panel content -->
+            <div class="flex flex-col space-y-8 pt-8 text-center max-w-lg">
+              <h3 class="mt-32 text-3xl text-white font-semibold lg:mt-0">UPGRADE THE INTENSITY</h3>
+              <i class="fa fa-solid fa-dumbbell text-pink text-4xl"></i>
+              <p class="text-white">Our expert trainers are dedicated to crafting workouts that transcend the ordinary, delivering sessions that are not only challenging but also deeply enjoyable. We pride ourselves on creating a unique exercise experience tailored specifically to your needs, ensuring you achieve your fitness goals efficiently and effectively.</p>
+            </div>
+          </div>
+          <!-- Panel 2 -->
+          <div class="hidden flex justify-center py-8 panel panel-2">
+            <!-- Panel content -->
+            <div class="flex flex-col space-y-8 pt-8 text-center max-w-lg">
+              <h3 class="mt-32 text-3xl text-white font-semibold lg:mt-0">NUTRITIONAL EXPERTISE</h3>
+              <i class="fa fa-solid fa-scale-balanced text-pink text-4xl"></i>
+              <p class="text-white">Our approach doesn't stop at workouts alone; we recognize that achieving a healthier you involves more than just physical exertion. That's why we provide expert nutritional guidance that empowers you to make informed dietary choices. Our nutritional expertise ensures you're fueling your workouts optimally, helping you sculpt your body while fostering lasting wellness.</p>
+            </div>
+          </div>
+          <!-- Panel 3 -->
+          <div class="hidden flex justify-center py-8 panel panel-3">
+            <!-- Panel content -->
+            <div class="flex flex-col space-y-8 pt-8 text-center max-w-lg">
+              <h3 class="mt-32 text-3xl text-white font-semibold lg:mt-0">MINDEST MASTERY</h3>
+              <i class="fa fa-solid fa-brain text-pink text-4xl"></i>
+              <p class="text-white">A strong body is only part of the equation; a resilient mindset is equally crucial. Join our vibrant fitness community and experience the power of mindset coaching. We believe in holistic transformation, ensuring your journey transcends physical appearances and touches the core of your mental and emotional well-being. We offer you the tools and support to cultivate mental resilience, empowering you to overcome obstacles and embrace a healthier, happier you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Our expert trainers provide effective workouts, nutritional guidance, and unwavering support. We understand your busy schedule and offer flexible training options. We believe in holistic health, aiming to make you feel your best, both physically and mentally. -->
+    <!-- Contact form text:  Let us help you become stronger, fitter and more confident. Contact us today and take the first step towards a healthier, happier you!-->
   </body>
 </html>
