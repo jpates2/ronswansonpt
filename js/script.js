@@ -18,3 +18,22 @@ function onTabClick(e) {
   const classString = e.target.getAttribute("data-target");
   document.getElementById("panels").getElementsByClassName(classString)[0].classList.remove("hidden");
 }
+
+
+// FAQs
+
+const faqContainers = document.querySelectorAll(".faq-cont");
+const faqContent = document.querySelectorAll(".faq-content");
+
+faqContainers.forEach((container) => container.addEventListener("click", onFAQClick))
+
+function onFAQClick (e) {
+  // Open this FAQ
+  const content = e.target.closest(".faq-cont").querySelector(".faq-content");
+  content.classList.toggle("max-h-screen");
+  content.classList.toggle("max-h-0");
+
+  // Arrow rotate
+  const arrow = e.target.closest(".faq-cont").querySelector(".arrow");
+  arrow.classList.toggle("rotate180")
+}
