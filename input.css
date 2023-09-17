@@ -64,15 +64,15 @@
   height: 24px;
   transition: all 0.25s;
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 24px;
+  top: 24px;
 }
 
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
   position: absolute;
-  width: 24px;
+  width: 28px;
   height: 4px;
   top: 0;
   left: 0;

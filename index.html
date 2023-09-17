@@ -29,6 +29,22 @@
         </button>
       </div>
 
+      <!-- Hamburger menu -->
+      <div id="menu" class="fixed inset-0 z-20 hidden flex flex-col items-center justify-center self-end w-full h-full m-h-screen px-6 py-1 pt-32 pb-4 text-pink uppercase divide-y divide-white opacity-90 bg-dark">
+        <div class="w-full py-3 text-center mx-auto md:w-96">
+          <a href="#why" class="block hover:text-white menu-item">WHY</a>
+        </div>
+        <div class="w-full py-3 text-center mx-auto md:w-96">
+          <a href="#where" class="block hover:text-white menu-item">WHERE</a>
+        </div>
+        <div class="w-full py-3 text-center mx-auto md:w-96">
+          <a href="#packages" class="block hover:text-white menu-item">HOW MUCH</a>
+        </div>
+        <div class="w-full py-3 text-center mx-auto md:w-96">
+          <a href="#contact"><button class="px-6 py-4 mt-8 bg-pink text-white text-md font-semibold rounded-full hover:text-pink hover:bg-white hover:scale-105 duration-300 menu-item">MESSAGE</button></a>
+        </div>
+      </div>
+
       <div class="relative flex justify-center h-96 w-screen py-12 lg:h-128">
         <!-- Main navbar -->
         <div class="hidden absolute space-x-12 right-12 max-w-xl justify-between items-center lg:flex">
@@ -45,7 +61,7 @@
               <div class="mx-2 group-hover:border-b group-hover:border-pink"></div>
             </div>
             <!-- Message button -->
-            <button class="px-6 py-4 bg-pink text-md font-semibold rounded-full hover:text-white hover:scale-105 duration-300">MESSAGE</button>
+            <a href="#contact"><button class="px-6 py-4 bg-pink text-md font-semibold rounded-full hover:text-white hover:scale-105 duration-300">MESSAGE</button></a>
         </div>
 
         <!-- Hero title -->
@@ -461,15 +477,15 @@
           <!-- Form -->
           <div class="relative space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2">
-              <label class="text-xl text-pink">Name</label>
+              <label class="mb-4 text-xl text-pink md:mb-0">Name</label>
               <input />
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2">
-              <label class="text-xl text-pink">Email</label>
+              <label class="mb-4 text-xl text-pink md:mb-0">Email</label>
               <input />
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2">
-              <label class="text-xl text-pink">Phone</label>
+              <label class="mb-4 text-xl text-pink md:mb-0">Phone</label>
               <input />
             </div>
             <div>

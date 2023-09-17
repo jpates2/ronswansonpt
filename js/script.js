@@ -37,3 +37,25 @@ function onFAQClick (e) {
   const arrow = e.target.closest(".faq-cont").querySelector(".arrow");
   arrow.classList.toggle("rotate180")
 }
+
+
+// Hamburger menu
+
+const menuBtn = document.querySelector("#menu-btn");
+const menu = document.querySelector("#menu");
+const menuItem = document.querySelectorAll(".menu-item");
+
+menuBtn.addEventListener("click", navToggle);
+menuItem.forEach((item) => item.addEventListener("click", navToggle))
+
+function navToggle() {
+  menuBtn.classList.toggle("open");
+  menu.classList.toggle("flex");
+  menu.classList.toggle("hidden");
+}
+
+function navClose() {
+  menu.classList.toggle("hidden");
+  menu.classList.toggle("flex");
+  menuBtn.classList.toggle("open");
+}
