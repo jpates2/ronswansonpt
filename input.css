@@ -9,20 +9,20 @@
 }
 
 #where-1 {
-  background-image: linear-gradient(to bottom, rgba(28, 28, 28, 0.1), rgba(28, 28, 28, 1)), url('../images/gym5.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  /* box-shadow: 0 0 0px 8px rgba(28, 28, 28, 1) inset; */
-}
-
-#where-2 {
   background-image: linear-gradient(to bottom, rgba(28, 28, 28, 0.1), rgba(28, 28, 28, 1)), url('../images/outdoors3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   /* box-shadow: 0 0 0px 8px rgba(28, 28, 28, 1) inset; */
   filter: grayscale(1);
+}
+
+#where-2 {
+  background-image: linear-gradient(to bottom, rgba(28, 28, 28, 0.1), rgba(28, 28, 28, 1)), url('../images/gym5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  /* box-shadow: 0 0 0px 8px rgba(28, 28, 28, 1) inset; */
 }
 
 #where-3 {
