@@ -59,3 +59,9 @@ function navClose() {
   menu.classList.toggle("flex");
   menuBtn.classList.toggle("open");
 }
+
+
+// Scroll to top on refresh
+window.onbeforeunload = () => {
+  window.scrollTo(0, 0);
+}
