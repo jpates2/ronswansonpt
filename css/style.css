@@ -594,24 +594,12 @@ video {
   right: 3rem;
 }
 
-.top-8 {
-  top: 2rem;
-}
-
-.top-80 {
-  top: 20rem;
-}
-
-.left-16 {
-  left: 4rem;
-}
-
 .top-16 {
   top: 4rem;
 }
 
-.left-8 {
-  left: 2rem;
+.top-80 {
+  top: 20rem;
 }
 
 .z-10 {
@@ -904,10 +892,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-12 {
@@ -1238,16 +1222,12 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:left-4 {
-    left: 1rem;
+  .md\:left-0 {
+    left: 0px;
   }
 
   .md\:top-8 {
     top: 2rem;
-  }
-
-  .md\:left-0 {
-    left: 0px;
   }
 
   .md\:order-none {

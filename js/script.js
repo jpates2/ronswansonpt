@@ -62,6 +62,7 @@ function navClose() {
 
 
 // Scroll to top on refresh
-window.onbeforeunload = () => {
+window.onload = () => {
   window.scrollTo(0, 0);
+  location.href = "#";
 }
